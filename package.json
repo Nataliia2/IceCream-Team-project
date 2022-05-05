@@ -6,7 +6,7 @@
   "homepage": "https://54Cat.github.io/team-proj-demo",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-proj-demo/"
+    "build": "parcel build src/*.html --public-url /team-proj-demo/"    
   },
   "repository": {
     "type": "git",
