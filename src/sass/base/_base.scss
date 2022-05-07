@@ -15,7 +15,18 @@ p:last-child {
 }
 
 /*Сброс подчеркиварий и маркеров*/
+ul {
+  padding: 0;
+  margin: 0;
 
+  list-style-type: none;
+}
+li {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
 .link {
   text-decoration: none;
   position: relative;
@@ -29,8 +40,8 @@ p:last-child {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
-    color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  color: #ffffff;
 }
 
 img {
