@@ -1,0 +1,84 @@
+.hero {
+  height: 664px;
+  background: #ffb8ca;
+}
+
+.hero__title {
+  width: 277px;
+  font-family: --primary-font;
+
+  font-weight: 400;
+  font-size: 38px;
+  line-height: calc(44 / 38);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 60px;
+  color: #ffffff;
+}
+.hero__title-crimson {
+  font-family: --primary-font;
+
+  font-weight: 400;
+  font-size: 58px;
+  line-height: calc(66 / 58);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+.hero__desc {
+  display: flex;
+  align-items: center;
+}
+.hero__desc-right__sidebar {
+  width: 200px;
+  height: 78px;
+}
+
+.hero-picture__circle {
+  position: absolute;
+  width: 534px;
+  height: 534px;
+}
+
+//Кнопка меню в хедере
+.hero__button-crimson {
+  width: 107px;
+  height: 40px;
+  background: #d41443;
+  border-radius: 20px;
+  font-family: --secondary-font;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  color: #ffffff;
+}
+.hero-button__box {
+  display: flex;
+  margin-top: 24px;
+}
+.hero__button {
+  width: 138px;
+  height: 40px;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  font-family: --secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #d41443;
+}
+//Кнопка меню в хедере
