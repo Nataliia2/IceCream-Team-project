@@ -1,3 +1,10 @@
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .about {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -41,7 +48,26 @@
     margin-right: auto;
     margin-left: auto;
 }
+.about__container {
+    background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+   @media screen and (max-width:767px) {
+       background-image: url('../images/about/about-background_sm.png');
+       background-image: -webkit-image-set(url('../images/about/about-background_sm.webp') 1x);
+       
 
+       @media screen and (min-device-pixel-ratio: 2),
+       screen and (-moz-min-device-pixel-ratio: 2),
+       screen and (-o-min-device-pixel-ratio: 2/1),
+       screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi),
+       screen and (min-resolution: 2dppx) {
+           background-image: url('../images/about/about-background_sm@2x.png');
+           background-image: -webkit-image-set(url('../images/about/about-background_sm@2x.webp') 2x);
+       }
+   }
+}
 .about__text {
     font-family: 'DM Sans';
     font-style: normal;
@@ -49,6 +75,7 @@
     font-size: 12px;
     line-height: calc(19/12);
     text-align: start;
+    width: 220px;
 
     color: #000000;
 
