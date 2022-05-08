@@ -1,1 +1,20 @@
-<p class="gallery">section gallery</p>
+<section class="gallery" >
+    <div class="container">
+        <h2 class="visually-hidden">gallery</h2>
+        <picture>
+            <source srcset="
+                            ./images/gallery/gallery_d.png 1x,
+                            ./images/gallery/gallery_d@2x.png 2x
+                            " media="(min-width:1280px)" type="image/webp" />
+            <source srcset="
+                            ./images/gallery/gallery_t.png 1x,
+                            ./images/gallery/gallery_t@2x.png 2x
+                            " media="(min-width:768px)" type="image/webp" />
+            <source srcset="
+                            ./images/gallery/gallery_m.png 1x,
+                            ./images/gallery/gallery_m@2x.png 2x
+                            " media="(max-width:767px)" type="image/webp" />
+            <img class="member__photo" src="./images/gallery/gallery_d.png" alt="Gallery">
+        </picture>
+    </div>
+</section>
