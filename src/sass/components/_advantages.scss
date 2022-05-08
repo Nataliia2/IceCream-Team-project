@@ -1,5 +1,7 @@
 .advantages {
     background-color: var(--second-bg);
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 .container {
     min-width: 320px;
@@ -44,13 +46,17 @@
 .advantages__list {
 
     @include mq(tablet) {
-        display: flex;
-        align-items: center;
-        margin-right: auto;
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
     }
+
+      
 }
 
 .advantages__it {
+    width: 230px;
     margin-bottom: 32px;
 
     &:nth-last-child(1) {
@@ -59,26 +65,22 @@
     }
 
     @include mq(tablet) {
+        flex-basis: calc(100%/4);
+        padding-left: 17px;
+        padding-right: 17px;
         margin-bottom: 0px;
-        margin-right: 22px;
-
-        &:first-child {
-            margin-right: 10px;
-        }
-         
+                 
     }
 
         @include mq(desktop) {
-             margin-right: 106px;
-    
-            &:first-child {
-                margin-right: 142px;
+                    flex-basis: calc((100%/3) - 160px);
+                margin-right: 150px;
+                padding-left: 1px;
+                padding-right: 1px;
+          
             }
     
-        }
-
-
-    
+   
 }
 
 .advantages__numbers {
@@ -109,27 +111,46 @@
         &--first::before {
             width: 33px;
             height: 50px;
-                
-            background-image: url("/images/advantages/milk-bucket.png");
+            
+            background-image: url(/images/advantages/milk-bucket.png);
+            background-image: -webkit-image-set(url(/images/advantages/milk-bucket.webp) 1x);
+            
+                @include mq(retina) {
+                    background-image: url(/images/advantages/milk-bucket@2x.png);
+                    background-image: -webkit-image-set(url(/images/advantages/milk-bucket@2x.webp) 2x);
+                }
         
             }
         &--second::before {
                 width: 50px;
                 height: 50px;
-                background-image: url("/images/advantages/fruits-bucket.png");
-        
+
+                background-image: url(/images/advantages/fruits-bucket.png);
+                    background-image: -webkit-image-set(url(/images/advantages/fruits-bucket.webp) 1x);
+                
+                    @include mq(retina) {
+                        background-image: url(/images/advantages/fruits-bucket@2x.png);
+                        background-image: -webkit-image-set(url(/images/advantages/fruits-bucket@2x.webp) 2x);
+                    }
+
             }
 
         &--third::before {
             width: 44px;
             height: 50px;
-            background-image: url("/images/advantages/advantages-ice-cream.png");
+
+            background-image: url(/images/advantages/advantages-ice-cream.png);
+                background-image: -webkit-image-set(url(/images/advantages/advantages-ice-cream.webp) 1x);
+            
+                @include mq(retina) {
+                    background-image: url(/images/advantages/advantages-ice-cream@2x.png);
+                    background-image: -webkit-image-set(url(/images/advantages/advantages-ice-cream@2x.webp) 2x);
+                }
         
             }
 }
 
 .advantages__dscr {
-    width: 230px;
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 12px;
@@ -137,20 +158,4 @@
 
     color: var(--dark-txt);
 
-    @include mq(tablet-only) {
-        &--first {
-            width: 174px;
-        }
-        &--second {
-            width: 162px;
-        }
-         &--third {
-            width: 159px;
-        }
-    }
-
-    @include mq(desktop) {
-        width: 260x;
-
-    }
 }
