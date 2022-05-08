@@ -1,3 +1,106 @@
 .advantages {
-    color: #84661f; 
+    background-color: var(--second-bg);
+}
+.container {
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(mobile) {
+        width: 480px;
+    }
+
+    @include mq(tablet) {
+        width: 768px;
+    }
+
+    @include mq(desktop) {
+        width: 1280px;
+    }
+}
+.advantages__title {
+    visibility: hidden;
+    height: 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages__list {
+
+    @include mq(tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.advantages__it {
+    margin-bottom: 32px;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+}
+
+.advantages__numbers {
+    font-family: var(--secondary-font);
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--accent-txt);
+
+    &::before {
+        display: block;
+        margin-bottom: 16px;
+        content: '';
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+        &--first::before {
+            width: 33px;
+            height: 50px;
+                
+            background-image: url("/images/advantages/milk-bucket.png");
+        
+            }
+        &--second::before {
+                width: 50px;
+                height: 50px;
+                background-image: url("/images/advantages/fruits-bucket.png");
+        
+            }
+
+        &--third::before {
+            width: 44px;
+            height: 50px;
+            background-image: url("/images/advantages/advantages-ice-cream.png");
+        
+            }
+}
+
+.advantages__dscr {
+    width: 230px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+
+    color: var(--dark-txt);
 }
