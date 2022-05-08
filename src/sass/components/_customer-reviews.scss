@@ -2,7 +2,8 @@
 .customer-reviews {
     position: relative;
     text-align: center;
-    padding: 40px 15px 48px 15px;
+    padding-top: 40px;
+    padding-bottom: 48px;
 }
 
 .customer-reviews__img {
@@ -20,21 +21,20 @@
 
 .customer-reviews__background {
     position: relative;
-    max-width: 480px;
     background-color: var(--customer-reviews-bg);
     margin-bottom: 16px;
-    padding: 43px 50px 20px;
+    padding: 43px 0px 20px;
     margin-left: auto;
     margin-right: auto;
 
     @include mq (tablet) {
             max-width: 620px;
-            padding: 37px 6px 36px;
+            padding: 37px 0px 36px;
             margin-bottom: 4px;
         }
     @include mq (desktop) {
         max-width: 1034px;
-        padding: 47px 106px 31px;
+        padding: 47px 0px 31px;
         margin-bottom: 16px;
     }
 
@@ -50,7 +50,7 @@
 
         @include mq (tablet) {
         top: 20px;
-        left: 42px;
+        left: 6px;
     }
         @include mq (desktop) {
         top: 32px;
@@ -65,17 +65,24 @@
     font-size: 12px;
     line-height: 2.55;
     margin-bottom: 0;
+    margin-left: 50px;
+    margin-right: 50px; 
+    padding: 0 15px;
     color: var(--dark-txt);
 
         @include mq (tablet) {
         font-size: 14px;
         line-height: 2.16;
-        padding: 0 50px ;    
+        // padding: 0 44px ; 
+        margin-left: 6px;
+        margin-right: 6px;    
     }
         @include mq (desktop) {
         font-size: 16px;
         line-height: 1.86;
-        padding: 0 36px ;    
+        // padding: 0 36px ;
+        margin-left: 106px;
+        margin-right: 106px; 
     }
 
     background-image: repeating-linear-gradient(0deg, #e1e1e1, transparent 1px 31px);
