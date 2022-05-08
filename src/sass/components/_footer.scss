@@ -9,23 +9,12 @@ ul {
 }
 
 .footer {
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 20px;
-
-    @media screen and (min-width: 768px) {
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-bottom: 8px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
     
-    // color: black;
+    @include mq(tablet) {
+        padding-bottom: 8px;
+        background-color: tomato;
+    }
 }
 
 .footer__text-groupe {
