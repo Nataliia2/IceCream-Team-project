@@ -4,9 +4,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(/images/backdrop_hero/Background_backdrop.png);
-  background-size: cover;
-  background-position: center;
+  background: url(/images/backdrop_hero/Background_backdrop.png),
+    linear-gradient(rgb(255, 255, 255, 0.8), #ffa5ba, rgb(255, 255, 255, 0.8));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #ffa5ba;
 }
 
 .backdrop__body {
@@ -17,45 +20,101 @@
   align-items: center;
   justify-self: center;
   padding: 30px;
-  background-color: rgba(240, 143, 202, 0.2);
+  background-color: #f08fca33;
 }
-.backdrop__content {
-  position: absolute;
-  color: black;
-  max-width: 800px;
-}
+
 .backdrop__close {
+  width: 40px;
+  height: 40px;
   top: 33px;
   right: 50px;
   position: absolute;
-  background-color: rgba(240, 143, 202, 0.2);
+}
+.backdrop__close-svg {
+  fill: #d41443;
+  width: 40px;
+  height: 40px;
 }
 
-.backdrop__text {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .backdrop__title {
-  width: 600px;
-  height: 100%;
   position: relative;
-  bottom: 96px;
-  left: 148px;
 
   font-family: var(--secondary-font);
 
   font-weight: 400;
-  font-size: 25px;
-  line-height: calc(30 / 25);
 
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: #d41443;
+  @keyframes Appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation-name: Appearance;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  @include mq(mobile-only) {
+    font-size: 15px;
+    line-height: calc(19 / 15);
+    width: 60%;
+    height: 100%;
+    bottom: 96px;
+    left: 21px;
+  }
+  @include mq(tablet) {
+    font-size: 23px;
+    line-height: calc(27 / 23);
+    width: 300px;
+    height: 100%;
+    bottom: 96px;
+    left: 21px;
+  }
+  @include mq(desktop) {
+    font-size: 25px;
+    line-height: calc(30 / 25);
+    width: 600px;
+    height: 100%;
+    bottom: 96px;
+    left: 148px;
+  }
 }
 
 .backdrop-title__color__blue {
-  color: #1487d4;
+  color: #eff5fc;
+}
+.backdrop__img {
+  position: absolute;
+  @keyframes Appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation-name: Appearance;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  @include mq(mobile-only) {
+    right: 16px;
+    top: 527px;
+  }
+  @include mq(tablet) {
+    width: 258px;
+    height: auto;
+    right: 179px;
+    top: 54px;
+  }
+  @include mq(desktop) {
+    width: 358px;
+    height: auto;
+    right: 179px;
+    top: 54px;
+  }
 }
