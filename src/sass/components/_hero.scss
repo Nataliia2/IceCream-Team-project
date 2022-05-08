@@ -5,6 +5,7 @@
   position: relative;
   @media screen and (max-width: 767px) {
     height: 502px;
+    overflow: hidden;
   }
   @media screen and (min-width: 768px) {
     height: 416px;
@@ -24,8 +25,8 @@
   color: var(--light-txt);
   @media screen and (max-width: 767px) {
     width: 162px;
-    font-size: 26px;
-    line-height: calc(26 / 30);
+    font-size: 24px;
+    line-height: calc(30 / 24);
   }
   @media screen and (min-width: 768px) {
     width: 162px;
@@ -61,7 +62,7 @@
   text-transform: uppercase;
 
   color: var(--accent-txt);
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     font-size: 34px;
     line-height: calc(39 / 34);
   }
@@ -163,6 +164,9 @@
 }
 .hero-picture__circle {
   position: absolute;
+
+  border-radius: 50%;
+  background: #fea5bb;
   @keyframes Appearance {
     0% {
       opacity: 0;
@@ -172,21 +176,29 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    left: 36px;
-    top: 83px;
+  @media screen and (max-width: 767px) {
+    left: 11.25%;
+    bottom: 75px;
+    width: 346px;
+    height: 344px;
   }
   @media screen and (min-width: 768px) {
     left: 248px;
     top: 43px;
+    width: 335px;
+    height: 333px;
   }
   @media screen and (min-width: 1280px) {
-    top: 54px;
     left: 517px;
+    top: 54px;
+
+    width: 534px;
+    height: 534px;
   }
 }
+
 .hero-picture__icecream {
   position: absolute;
   @keyframes Appearance {
@@ -201,17 +213,17 @@
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    left: 117px;
-    top: 92px;
+  @media screen and (max-width: 767px) {
+    left: 84px;
+    top: 9px;
   }
   @media screen and (min-width: 768px) {
-    left: 322px;
-    top: 77px;
+    left: 65px;
+    top: 37px;
   }
   @media screen and (min-width: 1280px) {
-    left: 636px;
-    top: 105px;
+    left: 132px;
+    top: 52px;
   }
 }
 .hero-picture__so-tasty {
@@ -254,12 +266,36 @@
     top: 153px;
   }
 }
-
+.hero__number-shop__content {
+  margin-bottom: 18px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+    background-color: var(--primary-bg);
+    border-radius: 50%;
+    @media screen and (min-width: 768px) {
+      left: 34px;
+      top: 13px;
+      width: 16px;
+      height: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 27px;
+      left: 64px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
 .hero__number-shop__number {
   position: relative;
   font-family: var(--secondary-font);
   font-weight: 400;
-
+  margin-bottom: 0px;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
