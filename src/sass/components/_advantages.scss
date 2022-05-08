@@ -3,27 +3,7 @@
     padding-top: 20px;
     padding-bottom: 40px;
 }
-.container {
-    min-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
 
-    @include mq(mobile) {
-        width: 480px;
-    }
-
-    @include mq(tablet) {
-        width: 768px;
-    }
-
-    @include mq(desktop) {
-        width: 1280px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
 .advantages__title {
     visibility: hidden;
     height: 0px;
