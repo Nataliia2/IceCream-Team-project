@@ -4,29 +4,58 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 184, 202);
+  background: url(/images/backdrop_hero/Background_backdrop.png);
+  background-size: cover;
+  background-position: center;
 }
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+
 .backdrop__body {
+  position: relative;
   min-width: 100%;
   min-height: 100%;
   display: flex;
   align-items: center;
   justify-self: center;
   padding: 30px;
+  background-color: rgba(240, 143, 202, 0.2);
 }
 .backdrop__content {
-  background-color: inherit;
+  position: absolute;
   color: black;
   max-width: 800px;
 }
 .backdrop__close {
+  top: 33px;
+  right: 50px;
+  position: absolute;
+  background-color: rgba(240, 143, 202, 0.2);
+}
+
+.backdrop__text {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .backdrop__title {
+  width: 600px;
+  height: 100%;
+  position: relative;
+  bottom: 96px;
+  left: 148px;
+
+  font-family: var(--secondary-font);
+
+  font-weight: 400;
+  font-size: 25px;
+  line-height: calc(30 / 25);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
 }
-.backdrop__text {
+
+.backdrop-title__color__blue {
+  color: #1487d4;
 }
