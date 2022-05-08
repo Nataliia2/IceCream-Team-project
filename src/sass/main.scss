@@ -1,4 +1,17 @@
-@import './base/base';
-@import './utils/reset';
 @import './utils/variables';
+@import './utils/mixin';
+
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+
+@import './components/header';
+@import './components/modal-menu';
+@import './components/hero';
+@import './components/products';
 @import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
