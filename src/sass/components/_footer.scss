@@ -10,19 +10,19 @@ ul {
 
 .footer {
     padding-bottom: 20px;
+    background-color: blue;
     
     @include mq(tablet) {
         padding-bottom: 8px;
-        background-color: tomato;
     }
 }
 
 .footer__text-groupe {
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
         width: 340px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
         width: 474px;
     }
 }
@@ -37,17 +37,17 @@ ul {
     
     color: var(--uppertitle-txt);
 
-    @media screen and (max-width: 467px) {
+    @include mq(mobile-only) {
         width: 232px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
         font-size: 26px;
         line-height: 1.15;
         letter-spacing: 0.04em;
     }
     
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
         font-size: 30px;
         line-height: 1.13;
     }
@@ -62,18 +62,26 @@ ul {
                 
     color: var(--accent-txt);
 
-    @media screen and (max-width: 467px) {
+    @include mq(mobile-only) {
         width: 200px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
         font-size: 48px;
         line-height: 1.15;
         letter-spacing: 0.06em;
     }
         
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
         font-size: 58px;
         line-height: 1.14;
     }
+}
+
+.social__item {
+    background-color: tomato;
+}
+
+.social__icon {
+    fill: var(--primary-fill-icon);
 }
