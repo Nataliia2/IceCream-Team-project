@@ -131,18 +131,21 @@
   border-radius: 50%;
   background-color: white;
   @media screen and (min-width: 768px) {
+    background-image: url(/images/arrow-right-table.png);
     bottom: 31px;
     right: 99px;
     width: 18px;
     height: 18px;
   }
   @media screen and (min-width: 1280px) {
+    background-image: url(/images/arrow-right.png);
     bottom: 14px;
     right: 180px;
     width: 26px;
     height: 26px;
   }
 }
+
 .hero__txt {
   font-family: var(--primary-font);
 
