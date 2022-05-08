@@ -1,4 +1,11 @@
-p{
-    color:  #00ff00
-   }
-   
+
+
+// Утилиты
+@import './utils/mixin';
+@import './utils/reset';
+@import './utils/variables';
+
+// компоненты
+@import './components/container';
+@import './components/header';
+
