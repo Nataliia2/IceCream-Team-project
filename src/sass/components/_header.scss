@@ -39,21 +39,16 @@
 .nav__list {
     display: flex;
 
-    list-style: none;
-        padding-left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
 .nav__item:not(:last-child) {
         margin-right: 35px;
     }
 }
 
-.nav__link {
-    position: relative;
-    display: flex;
-    align-items: center;
-
+.nav__link {    
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -79,11 +74,11 @@
 }
 .header-button {
     padding: 10px 32px;
-    min-width: 159px;
+    min-width: 160px;
     height: 44px;
     margin-left: auto;
 
-    font-family: 'DM Sans';
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 16px;
     line-height: (21/16);
