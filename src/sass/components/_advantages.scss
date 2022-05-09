@@ -23,7 +23,10 @@
 
     &:nth-last-child(1) {
         margin-bottom: 0px;
-        margin-right: 0px;
+
+        @include mq(tablet) {
+            margin-right: 0px;
+        }
     }
 
     @include mq(tablet) {
