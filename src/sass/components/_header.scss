@@ -1,25 +1,21 @@
 
 .page-header {
-    // position: absolute;
-    display: flex;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 60px;
-    // background-color: transparent;
-   background-color: #FFB8CA;
-
-    // @media screen and (min-width:768px)
+    padding-top: 8px;
+    background-color: transparent;
+ 
+   
     @include mq(tablet) {
-        min-height: 80px;
+        padding-top: 32px;
     }
-
-    // @media screen and (min-width:1280px)
-        @include mq(tablet) {
-        min-height: 90px;
+    
+    @include mq(desktop) {
+    padding-top: 37px;
     }
 }
-
 
 /* навигация */
 .navigation {
@@ -29,17 +25,13 @@
 }
 
 .nav {
-    @media screen and (max-width: 1279px) {
+    @include mq(notDesktop) {
         display: none;
     }
    
 }
 .nav__list {
     display: flex;
-
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
 
 .nav__item:not(:last-child) {
         margin-right: 35px;
@@ -67,8 +59,7 @@
     /* активная страница */
     &--current {
         color: var(--accent-txt);
-    }
-    
+    }    
 }
 .header-button {
     padding: 10px 32px;
@@ -108,7 +99,7 @@
         background-color: #ECEBEB;
         }
 
-    @media screen and (max-width: 767px) {
+        @include mq(mobile-only) {
         display: none;
     }
 }
@@ -118,7 +109,7 @@
     background-color: transparent;
     border: 1px solid transparent;
    
-    @media screen and (min-width: 1280px) {
+    @include mq(desktop) {
             display: none;
         }
 }
