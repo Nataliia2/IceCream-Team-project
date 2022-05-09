@@ -5,10 +5,9 @@
     left: 0;
     width: 100%;
     padding-top: 8px;
-    // background-color: transparent;
-    background-color: aqua;
- 
-   
+    background-color: transparent;
+    z-index: 99;
+    
     @include mq(tablet) {
         padding-top: 32px;
     }
