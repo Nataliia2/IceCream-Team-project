@@ -1,8 +1,10 @@
-@import './base/base';
-@import './base/reset';
-
 @import './utils/variables';
 @import './utils/mixin';
+@import './utils/visually-hidden';
+
+@import './base/base';
+@import './base/reset';
+@import './base/container';
 
 @import './components/header';
 @import './components/modal-menu';
