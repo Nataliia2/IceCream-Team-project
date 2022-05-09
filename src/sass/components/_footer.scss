@@ -59,6 +59,10 @@ ul {
         line-height: 1.15;
         letter-spacing: 0.04em;
     }
+
+    @include mq(tablet-only) {
+        margin-bottom: 12px;
+    }
     
     @include mq(desktop) {
         font-size: 30px;
