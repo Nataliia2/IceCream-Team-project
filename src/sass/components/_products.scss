@@ -79,12 +79,17 @@ line-height: 1.13;
 
     @media screen and (min-width: 768px) {
         display: flex;
+        justify-content: center;
     }
 }
 
 .products__item {
     position: relative;
     border-radius: 24px;
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 224px;
+}
   
 }
 
@@ -191,7 +196,7 @@ line-height: 1.13;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) { 
-height: 125px;
+height: 150px;
 overflow: hidden;
 margin-bottom: 32px;
 font-size: 14px;
@@ -199,7 +204,7 @@ line-height: 1.79;
 }
     
 @media screen and (min-width: 1280px) {
-    height: 119px;
+    height: 107px;
     overflow: hidden;
     margin-bottom: 60px;
     font-weight: 700;
