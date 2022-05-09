@@ -121,7 +121,7 @@
 
 .social__icon {
     fill: var(--primary-fill-icon);
-    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--animation-hover);
 
     @include mq(tablet) {
         width: 34px;
