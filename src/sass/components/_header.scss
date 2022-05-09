@@ -9,19 +9,17 @@
     // background-color: transparent;
    background-color: #FFB8CA;
 
-    @media screen and (min-width:768px) {
+    // @media screen and (min-width:768px)
+    @include mq(tablet) {
         min-height: 80px;
     }
 
-    @media screen and (min-width:1280px) {
+    // @media screen and (min-width:1280px)
+        @include mq(tablet) {
         min-height: 90px;
     }
 }
 
-.logo {    
-    text-decoration: none;
-       
-}
 
 /* навигация */
 .navigation {
