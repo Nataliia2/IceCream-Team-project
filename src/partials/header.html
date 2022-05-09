@@ -29,13 +29,15 @@
                 </li>
             </ul>
         </nav>
-        <div>
-            <button class="menu-btn" type="button" aria-label="кнопка открытия меню">
+        <div class="header-btn">
+            <button class="menu-btn" data-menu-button type="button" aria-label="кнопка открытия меню" aria-expanded="false">
                 <svg class="menu-btn__icon" width="20" height="12">
                     <use class="menu-btn__icon-open" href="/images/icons-ice-cream.svg#icon-Burger"></use>
-            
+                    <!-- <use class="menu-btn__icon-close" href="/images/icons-ice-cream.svg#icon-close"></use> -->
                 </svg>
             </button>
+            <!-- меню для мобилки -->
+            <!-- <div class="mobile-menu" data-menu></div> -->
             <button type="button" class="header-button">Buy now</button>
         </div>
     </div>
