@@ -1,46 +1,28 @@
-.container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .about {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     background-color: var(--second-bg);
     text-align: center;
     background-size: contain;
     background-position:bottom 25% right;
     background-repeat: no-repeat;
     
-        @media screen and (max-width:767px) {
+        @include mq (mobile-only) {
             background-image: url('../images/about/about-background_sm.png');
             background-image: -webkit-image-set(url('../images/about/about-background_sm.webp') 1x);
     
     
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (-moz-min-device-pixel-ratio: 2),
-            screen and (-o-min-device-pixel-ratio: 2/1),
-            screen and (-webkit-min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
+            @include mq (retina) {
                 background-image: url('../images/about/about-background_sm@2x.png');
                 background-image: -webkit-image-set(url('../images/about/about-background_sm@2x.webp') 2x);
             }
         }
-        @media screen and (min-width:1200px) {
+        @include mq (desktop) {
             background-position: bottom 10% right;
             background-image: url('../images/about/about-background_lg.png');
             background-image: -webkit-image-set(url('../images/about/about-background_lg.webp') 1x);
 
-
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (-moz-min-device-pixel-ratio: 2),
-            screen and (-o-min-device-pixel-ratio: 2/1),
-            screen and (-webkit-min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
+            @include mq (retina) {
                 background-image: url('../images/about/about-background_lg@2x.png');
                 background-image: -webkit-image-set(url('../images/about/about-background_lg@2x.webp') 2x);
             }
@@ -51,10 +33,10 @@
     display: flex;
     // justify-content:center;
     align-items: center;
-    @media screen and (max-width: 767px) {
+    @include mq (mobile-only) {
         flex-direction: column;
     }
-    @media screen and (max-width: 1199px) {
+    @include mq (notDesktop) {
         justify-content: center;
     }
 
@@ -82,13 +64,13 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
-    color: #D41443;
+    color: var(--accent-btn-bg);
     margin-bottom: 32px;
 
-    @media screen and (max-width: 767px) {
+    @include mq (mobile-only) {
         width: 200px;
     }
-    @media screen and (min-width: 768px) {
+    @include mq (tablet) {
     margin-bottom: 80px;
     }
 }
@@ -97,31 +79,29 @@
 }
 .about__container {
     text-align: left;
-    @media screen and (min-width: 768px) {
-        margin-left: 32px;
-        
-        }
-    @media screen and (min-width: 1200px) {
+    @include mq (tablet) {
+        margin-left: 32px;  
+    }
+
+    @include mq (desktop) {
         margin-left: 139px;
     }
                 
 }
 .about__text {
-    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
     text-align: start;
     width: 220px;
-    color: #000000;
     margin-bottom: 40px;
-    @media screen and (min-width: 768px) {
+    @include mq (tablet) {
         font-size: 14px;
         line-height: 1.76;
         width: 335px;
     }
-    @media screen and (min-width: 1200px) {
+    @include mq (desktop) {
         font-size: 16px;
         letter-spacing: 0.04;
         width: 463px;
@@ -134,7 +114,6 @@
 
 }
 .about__btn {
-font-family: var(--primary-font);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -148,7 +127,8 @@ font-family: var(--primary-font);
     padding: 12px 37px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,:focus {
+    &:hover,
+    &:focus {
       background-color: #ECEBEB;
     }
 }
