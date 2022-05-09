@@ -1,6 +1,5 @@
 
 .customer-reviews {
-    position: relative;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 48px;
@@ -73,14 +72,14 @@
         @include mq (tablet) {
         font-size: 14px;
         line-height: 2.16;
-        // padding: 0 44px ; 
+        padding: 0 44px ; 
         margin-left: 6px;
         margin-right: 6px;    
     }
         @include mq (desktop) {
         font-size: 16px;
         line-height: 1.86;
-        // padding: 0 36px ;
+        padding: 0 36px ;
         margin-left: 106px;
         margin-right: 106px; 
     }
