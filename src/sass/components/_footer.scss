@@ -43,7 +43,7 @@ ul {
 .footer__text {
     margin-bottom: 16px;
 
-    font-family: 'Titan One';
+    font-family: var(--secondary-font);
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
@@ -67,7 +67,7 @@ ul {
 }
 
 .footer__text--accent {
-    font-family: 'Titan One';
+    font-family: var(--secondary-font);
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -102,7 +102,6 @@ ul {
     @include mq(tablet) {
         
     }
-    
 }
 
 .social__item:not(:last-child){
@@ -142,7 +141,7 @@ ul {
     line-height: 186%;
     text-align: right;
     
-    color: #000000;
+    color: var(--dark-txt);
 
     @include mq(tablet) {
         font-size: 14px;
@@ -160,7 +159,7 @@ ul {
     line-height: 1.86;
     text-align: right;
     
-    color: #D41443;
+    color: var(--accent-txt);
 
     @include mq(tablet) {
         font-size: 14px;
@@ -207,6 +206,6 @@ ul {
     line-height: 152%;
     text-align: center;
     
-    color: #907E82;
+    color: var(--second-txt);
 }
     
