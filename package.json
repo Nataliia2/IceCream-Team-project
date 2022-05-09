@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://54Cat.github.io/team-proj-demo",
+  "homepage": "https://54Cat.github.io/ice-test",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-proj-demo/"
+    "build": "parcel build src/*.html --public-url /ice-test/"
   },
   "repository": {
     "type": "git",
