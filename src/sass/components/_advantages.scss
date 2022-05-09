@@ -51,6 +51,14 @@
 
     color: var(--accent-txt);
 
+    @include mq(tablet) {
+        margin-bottom: 13px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 16px;
+    }
+
     &::before {
         display: block;
         margin-bottom: 16px;
