@@ -1,78 +1,39 @@
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-
-    @media screen and (min-width: 480px) {
-        width: 400px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-}
-
 .contacts {
-    min-height: 100vh;
-
-    background-color: linear-gradient(
-        to bottom,
-        var (--primary-bg) 30%,
-        var (--second-bg) 70%
-    );
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #fff 20%, #fff5f6 0 100%);
     padding-top: 48px;
     padding-bottom: 48px;
-
-
 }
 
+
 .contacts-list {
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
         display: flex;
     }
 
 }
 
-.contacts-link {
-    width: 280px;
+.contacts-item {
+    max-width: 280px;
     padding: 40px 32px;
     background-color: var (--primary-bg);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    
 
-    @media screen and (max-width: 767px){
+    @include mq(mobile-only){
     &:not(:last-child) {
         margin-bottom: 20px;
     }
 }
-        @media screen and (min-width: 768px) {
-            width: 224px;
-            
+            @include mq(tablet) {
             &:not(:last-child) {
                     margin-right: 32px;
                 }
         }
 
-        @media screen and (min-width: 1200px) {
+            @include mq(desktop) {
             width: 393px;
         }
 }
@@ -81,7 +42,7 @@
     padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
      padding-bottom: 32px;
     }
 
@@ -105,7 +66,7 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
 
-    @media screen and (min-width: 768px){
+    @include mq(tablet){
         width: 73px;
         height: 28px;
         margin-bottom: 32px;
@@ -132,7 +93,7 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
             width: 138px;
             height: 28px;
             margin-bottom: 32px;
@@ -146,15 +107,15 @@
     font-size: 12px;
     line-height: 1.83;
     letter-spacing: 0.04em;
-    color: #000000;
+    color: var(--dark-txt);
     margin-bottom: 8px;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
             font-size: 14px;
             line-height: 1.85;
         }
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
         font-size: 16px;
         line-height: 1.87;
     }
@@ -166,12 +127,12 @@
     line-height: 1.5;
     color: var(--second-txt);
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
             font-size: 14px;
             line-height: 1.64;
         }
     
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
             font-size: 16px;
             line-height: 1.81;
         }
@@ -186,12 +147,12 @@
     line-height: 1.83;
     color: var(--dark-txt);
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
             font-size: 14px;
             line-height: 1.85;
         }
     
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
             font-size: 16px;
             line-height: 1.87;
         }
@@ -204,12 +165,12 @@
     color: var(--uppertitle-txt);
     margin-bottom: 8px;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
             font-size: 14px;
             line-height: 1.85;
         }
     
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
             font-size: 16px;
             line-height: 1.87;
         }
@@ -222,19 +183,19 @@
     line-height: 1.5;
     color: var(--second-txt);
 
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
             font-size: 14px;
             line-height: 1.81;
         }
     
-        @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
             font-size: 16px;
             line-height: 1.87;
         }
 }
 
 .contacts-button--box {
-    @media screen and (min-width: 768px) {
+    @include mq(tablet) {
         display: flex;
         justify-content: center;
         margin-top: 60px;
@@ -256,28 +217,28 @@
     border: transparent;
     cursor: pointer;
 
-    @media screen and (max-width: 767px) {
+    @include mq(mobile-only) {
         width: 190px;
     }
 
-    @media screen and (max-width: 1200px) {
-            width: 198px;
+    @include mq(notDesktop) {
+        width: 198px;
         }
 }
 
 .btn-red {
     background-color: var(--accent-btn-bg);
     color: var(--light-txt);
-    padding-left: 17px;
+    text-align: center;
 
-    @media screen and (max-width: 767px) {
+    @include mq(mobile-only) {
         margin-top: 32px;
         margin-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    @media screen and (min-width: 768px) {
+        @include mq(tablet) {
         margin-right: 15px;
     }
         
@@ -287,9 +248,9 @@
 .btn-white {
     background-color:var(--primary-bg);
     color: var(--accent-txt);
-    padding-left: 32px;
+    text-align: center;
 
-    @media screen and (max-width: 767px) {
+    @include mq(mobile-only) {
             margin-left: auto;
             margin-right: auto;
         }
@@ -303,5 +264,75 @@
 }
 
 .contacts-btn--svg {
-    margin-left: 14px;
+    margin-left: 10px;
+}
+
+.backdrop {
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
+
+    z-index: 10;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-button {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: var(--accent-btn-bg);
+
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--hover-btn-bg);
+    }
+}
+
+.modal {
+    position: absolute;
+
+    width: 100%;
+    height: 609px;
+    max-height: 100%;
+    overflow: scroll;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(mobile) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @include mq(desktop) {
+        width: 528px;
+        height: 581px;
+    }
 }
