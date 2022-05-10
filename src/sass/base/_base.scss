@@ -38,5 +38,6 @@ body {
   
   @include mq(desktop) { 
     font-size: 58px;
+    letter-spacing: 0.06em; 
   } 
 }
