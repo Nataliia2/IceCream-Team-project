@@ -102,7 +102,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .hero__desc-right__sidebar {
@@ -127,7 +127,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   border-radius: 50%;
   background-color: white;
@@ -144,9 +144,17 @@
     width: 26px;
     height: 26px;
   }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-btn-bg);
+  }
 }
 .hero__arrow_icon {
   fill: var(--accent-btn-bg);
+}
+.hero__arow:hover .hero__arrow_icon,
+.hero__arow:focus .hero__arrow_icon {
+  fill: var(--light-txt);
 }
 .hero__arrow_item {
   display: block;
@@ -189,7 +197,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   @media screen and (max-width: 767px) {
     left: 11.25%;
@@ -223,7 +231,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 
   @media screen and (max-width: 767px) {
@@ -250,7 +258,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   @media screen and(max-width:767px) {
     display: none;
