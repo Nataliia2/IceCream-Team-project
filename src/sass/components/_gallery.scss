@@ -1,11 +1,35 @@
-.gallery__container{
-    width: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
+.gallery{
+    background-image: linear-gradient(#fff5f6 45%, #ffffff 0 100%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include mq(desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }
 
 .gallery__list{
     display: flex;
-    align-items: center;
+    align-items: center;    
+    justify-content: center;
 }
+
+.gallery__item:not(:last-child) {
+    margin-right: 4px;
+
+    @include mq(tablet) {
+        margin-right: 6px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 8px;
+    }
+} 
+
+.gallery__thumb {
+    // border-radius: 18px;   
+    // background-color: #fff000; 
+}
+
     
