@@ -1,53 +1,44 @@
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-}
-
-h2:last-child,
-h1:last-child,
-h3:last-child,
-h4:last-child,
-p:last-child {
-  margin-bottom: 0;
-}
-
-/*Сброс подчеркиварий и маркеров*/
-button {
-  border: none;
-}
-ul {
-  padding: 0;
-  margin: 0;
-
-  list-style-type: none;
-}
-li {
-  padding: 0;
-  margin: 0;
-
-  list-style-type: none;
-}
-.link {
-  text-decoration: none;
-  position: relative;
-}
-
-.list {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
 body {
-  font-family: 'DM Sans', sans-serif;
-  color: #ffffff;
+  font-family: var(--primary-font);
+  color: var(--dark-txt);
 }
 
-img {
-  display: block;
-  max-width: 100%;
+.uppertitle { 
+  font-family: var(--secondary-font); 
+  color: var(--uppertitle-txt); 
+  text-align: center; 
+  text-transform: uppercase; 
+  font-size: 18px; 
+  line-height: 1.17; 
+  margin-bottom: 16px; 
+  
+  @include mq(tablet) {
+    font-size: 26px; 
+    line-height: 1.15; 
+  } 
+  
+  @include mq(desktop) {
+    font-size: 30px; 
+    line-height: 1.13; 
+    letter-spacing: 0.04em; 
+  } 
+} 
+ 
+.title { 
+  font-family: var(--secondary-font); 
+  color: var(--accent-txt); 
+  text-align: center; 
+  letter-spacing: 0.04em; 
+  text-transform: uppercase; 
+  font-size: 34px; 
+  line-height: 1.15;
+  
+  @include mq(tablet) { 
+    font-size: 48px; 
+  } 
+  
+  @include mq(desktop) { 
+    font-size: 58px;
+    letter-spacing: 0.06em; 
+  } 
 }
