@@ -1,0 +1,30 @@
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 43px;
+    height: 43px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: var(--light-btn-bg);
+   
+    cursor: pointer;
+    z-index: 100;
+
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.back-to-top:hover,
+.back-to-top:focus {
+    filter: brightness(1.5);
+    outline: none;
+}
+.scrollup__icon {
+    fill: var(--accent-btn-bg);
+}
+
