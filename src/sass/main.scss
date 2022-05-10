@@ -7,7 +7,7 @@
 @import './base/container';
 
 @import './components/header';
-@import './components/modal-menu';
+@import './components/mobile-menu';
 @import './components/hero';
 @import './components/products';
 @import './components/about';
@@ -16,4 +16,7 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
-@import './components/backdrop';
+
+@import './modals/backdrop';
+@import './modals/modal-menu';
+@import './modals/scroll-up';
