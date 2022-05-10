@@ -12,6 +12,11 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #ffa5ba;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .backdrop__body {
@@ -23,6 +28,11 @@
   justify-self: center;
   padding: 30px;
   background-color: #f08fca33;
+  &.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: initial;
+  }
 }
 
 .backdrop__close {
