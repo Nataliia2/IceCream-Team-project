@@ -1,9 +1,9 @@
 .menu-mobile {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
-    width: 100%;
+    width: 254px;
     opacity: 0;
     visibility: hidden; 
     background-color: #E17992;
@@ -66,17 +66,12 @@
         color: var(--accent-btn-bg);
     }
 
-    @include mq (tablet) {
-        min-width: 209px;
-        padding-left: 49px;
-        padding-right: 49px;
-    }
+ 
 
 }
 
 .close-mobile-btn {
     position: absolute;
-   
     background-color: #E17992;
     border: none;
     justify-content: center;
@@ -90,7 +85,13 @@
 
 
 .close-btn-icon {
+
     fill: var(--primary-bg);
+
+    &:hover,
+    &:focus {
+        fill:var(--accent-btn-bg)
+    }
 }
 
 
