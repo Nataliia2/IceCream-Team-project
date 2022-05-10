@@ -10,21 +10,20 @@
     height: 43px;
     border: transparent;
     border-radius: 50%;
-    background-color: var(--light-btn-bg);
-   
+    background-color: var(--primary-fill-icon);
+    transition: background-color var(--animation-function);
     cursor: pointer;
-    z-index: 100;
-
-    visibility: visible;
-    opacity: 1;
-    transition: 1s;
 }
+
 .back-to-top:hover,
 .back-to-top:focus {
-    filter: brightness(1.5);
-    outline: none;
+    background-color: var(--light-btn-bg);
 }
 .scrollup__icon {
     fill: var(--accent-btn-bg);
+    transition: fill var(--animation-function);
 }
-
+.scrollup__icon:hover,
+.scrollup__icon:focus {
+    fill:  var(--hover-fill-icon);
+}
