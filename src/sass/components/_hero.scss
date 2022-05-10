@@ -93,17 +93,18 @@
   }
 }
 .hero__desc-left__sidebar {
-  @keyframes Appearance {
+  animation: animate_grow 2s infinite;
+  @keyframes animate_grow {
     0% {
-      opacity: 0;
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.25, 1.25, 1.25);
     }
     100% {
-      opacity: 1;
+      transform: scale3d(1, 1, 1);
     }
   }
-  animation-name: Appearance;
-  animation-duration: 500ms;
-  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .hero__desc-right__sidebar {
   position: relative;
