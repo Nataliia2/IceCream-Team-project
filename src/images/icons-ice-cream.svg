@@ -68,6 +68,12 @@
                 stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
         </symbol>
 
+        <symbol id="icon-vector-for-buttom-red" viewBox="0 0 26 32">
+            <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round"
+                stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8">
+            </path>
+        </symbol>
+
         <symbol id="right-arrow" viewBox="0 0 32 32">
             <path
                 d="M0 15.999a3.174 3.174 0 0 0 3.17 3.168l18.011-.002-4.868 4.869c-1.318 1.319-1.386 3.392-.149 4.631 1.238 1.234 3.311 1.169 4.631-.15l10.168-10.17c1.322-1.318 1.389-3.392.15-4.63-.034-.03-.07-.052-.103-.082-.042-.044-.072-.097-.116-.143L20.861 3.459c-1.303-1.301-3.36-1.352-4.597-.114-1.238 1.238-1.185 3.296.114 4.599l4.886 4.885H3.168A3.168 3.168 0 0 0 0 15.997v.002z" />

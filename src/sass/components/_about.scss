@@ -42,53 +42,34 @@
 
 
 }
-.about__lable {
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: calc(21/18);
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    color: var(--uppertitle-txt);
+// .about__lable {
+//     font-family: var(--secondary-font);
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: calc(21/18);
+//     text-transform: uppercase;
+//     margin-bottom: 15px;
+//     color: var(--uppertitle-txt);
 
-    @include mq (tablet) {
-        font-size: 26px;
-        line-height: calc(30/26);
-    }
-    @include mq (desktop) {
-        font-size: 30px;
-        line-height: calc(34/30);
-        letter-spacing: 0.04em;
-    }
-}
+//     @include mq (tablet) {
+//         font-size: 26px;
+//         line-height: calc(30/26);
+//     }
+//     @include mq (desktop) {
+//         font-size: 30px;
+//         line-height: calc(34/30);
+//         letter-spacing: 0.04em;
+//     }
+// }
 
-.about__title {
-    display: inline-block;
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: calc(39/34);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--accent-btn-bg);
+.title {
     margin-bottom: 32px;
-
-    @include mq (mobile-only) {
-        width: 200px;
-    }
-    @include mq (tablet) {
-        font-size: 48px;
-        line-height: calc(55/48);
+    @include mq (tablet) { 
         margin-bottom: 40px;
     }
     @include mq (desktop) {
-        font-size: 58px;
-        line-height: calc(66/58);
         margin-bottom: 80px;
-        letter-spacing: 0.06em;
     }
 }
 .about__img{
