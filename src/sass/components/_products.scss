@@ -17,24 +17,6 @@
     }
 }
 
-.products__desc {
-
-@include mq(mobile-only) {
-margin-bottom: 15px;
-
-}
-
-@include mq(tablet-only) {
-margin-bottom: 18px;
-
-}
-
-@include mq(desktop) {
-margin-bottom: 16px;
-
-}
-}
-
 .products__title {
    
 @include mq(mobile-only) {
