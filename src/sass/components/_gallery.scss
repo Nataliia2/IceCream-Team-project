@@ -17,6 +17,7 @@
 
 .gallery__item:not(:last-child) {
     margin-right: 4px;
+    transition: transform var(--animation-hover);
 
     @include mq(tablet) {
         margin-right: 6px;
@@ -28,8 +29,52 @@
 } 
 
 .gallery__thumb {
-    // border-radius: 18px;   
-    // background-color: #fff000; 
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+    @include mq(tablet) {
+        border-radius: 14px;
+    }
+
+    @include mq(desktop) {
+        border-radius: 18px;
+    }
+
+    &:hover {
+        transform: scale(1.4);
+    }           
 }
 
+.gallery__list--colum { 
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__item--colum:not(:last-child) {
+    margin-bottom: 4px;
     
+    @include mq(tablet) {
+        margin-bottom: 6px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 8px;
+    }
+}
+
+.gallery__item:nth-child(2) {
+    margin-top: -16px;
+}
+    
+.gallery__item:nth-child(4) {
+    margin-top: 60px;
+}
+    
+.gallery__item:nth-child(5) {
+    margin-top: -30px;
+}  
+
+.gallery__item:nth-child(6) {
+    margin-top: 10px;
+}
