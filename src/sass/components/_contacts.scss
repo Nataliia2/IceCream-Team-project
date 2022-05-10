@@ -1,3 +1,350 @@
-.contacts{
-    color: #661d78;    
+.contacts {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #fff 20%, #fff5f6 0 100%);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+
+.contacts-list {
+    @include mq(tablet) {
+        display: flex;
+    }
+
+}
+
+.contacts-item {
+    max-width: 280px;
+    padding: 40px 32px;
+    background-color: var(--primary-bg);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    
+
+    @include mq(mobile-only){
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+            @include mq(tablet) {
+            &:not(:last-child) {
+                    margin-right: 32px;
+                }
+        }
+
+            @include mq(desktop) {
+            width: 393px;
+        }
+}
+
+.contacts-blok:not(:last-child) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+
+    @include mq(tablet) {
+     padding-bottom: 32px;
+    }
+
+}
+
+
+.contacts-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 16px;
+    background-color: #F0D1A5;
+    color: var(--light-txt);
+
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    @include mq(tablet){
+        width: 73px;
+        height: 28px;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.87;
+    }
+
+}
+
+.contacts-name--green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 16px;
+    width: 130px;
+    background-color: #C2E297;
+    color: var(--light-txt);
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    @include mq(tablet) {
+            width: 138px;
+            height: 28px;
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 1.87;
+        }
+}
+
+.contacts-city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: var(--dark-txt);
+    margin-bottom: 8px;
+
+    @include mq(tablet) {
+            font-size: 14px;
+            line-height: 1.85;
+        }
+
+    @include mq(desktop) {
+        font-size: 16px;
+        line-height: 1.87;
+    }
+}
+
+.contacts-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--second-txt);
+
+    @include mq(tablet) {
+            font-size: 14px;
+            line-height: 1.64;
+        }
+    
+    @include mq(desktop) {
+            font-size: 16px;
+            line-height: 1.81;
+        }
+
+}
+
+.contacts-day {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    color: var(--dark-txt);
+
+    @include mq(tablet) {
+            font-size: 14px;
+            line-height: 1.85;
+        }
+    
+    @include mq(desktop) {
+            font-size: 16px;
+            line-height: 1.87;
+        }
+}
+
+.contacts-oclok {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    color: var(--uppertitle-txt);
+    margin-bottom: 8px;
+
+    @include mq(tablet) {
+            font-size: 14px;
+            line-height: 1.85;
+        }
+    
+    @include mq(desktop) {
+            font-size: 16px;
+            line-height: 1.87;
+        }
+}
+
+.contacts-box{
+    margin-top: 24px;
+}
+
+.contacts-tel {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--second-txt);
+
+    @include mq(tablet) {
+            font-size: 14px;
+            line-height: 1.81;
+        }
+    
+    @include mq(desktop) {
+            font-size: 16px;
+            line-height: 1.87;
+        }
+}
+
+.contacts-button--box {
+    @include mq(tablet) {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border: transparent;
+    cursor: pointer;
+
+    @include mq(mobile-only) {
+        width: 190px;
+    }
+
+    @include mq(notDesktop) {
+        width: 198px;
+        }
+}
+
+.btn-red {
+    background-color: var(--accent-btn-bg);
+    color: var(--light-txt);
+    text-align: center;
+
+    @include mq(mobile-only) {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        @include mq(tablet) {
+        margin-right: 15px;
+    }
+        
+    
+}
+
+.btn-white {
+    background-color:var(--primary-bg);
+    color: var(--accent-txt);
+    text-align: center;
+
+    @include mq(mobile-only) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: #ECEBEB;
+        
+        }
+
+}
+
+.contacts-btn--svg {
+    margin-left: 10px;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
+
+    z-index: 5;
+}
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-button {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: var(--accent-btn-bg);
+
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--hover-btn-bg);
+    }
+}
+
+.modal {
+    position: absolute;
+
+    opacity: 0;
+    visibility: hidden;
+
+    width: 100%;
+    height: 609px;
+    max-height: 100%;
+    overflow: scroll;
+    z-index: 6;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(mobile) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @include mq(desktop) {
+        width: 528px;
+        height: 581px;
+    }
 }
