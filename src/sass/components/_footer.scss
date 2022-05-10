@@ -112,6 +112,11 @@
 
 .social__link {
     display: flex;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
 }
 
 .social__link:hover .social__icon,
@@ -154,6 +159,8 @@
     text-align: right;
     
     color: var(--accent-txt);
+    transition: color var(--animation-hover);
+    
 
     @include mq(tablet) {
         font-size: 14px;
@@ -162,6 +169,12 @@
     @include mq(desktop) {
         font-size: 16px;
         letter-spacing: 0.02em;
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        color: var(--uppertitle-txt);
     }
 }
 
