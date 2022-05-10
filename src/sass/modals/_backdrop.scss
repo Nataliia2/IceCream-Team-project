@@ -12,6 +12,27 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #ffa5ba;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @keyframes Appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation-name: Appearance;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 
 .backdrop__body {
@@ -23,6 +44,11 @@
   justify-self: center;
   padding: 30px;
   background-color: #f08fca33;
+  &.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: initial;
+  }
 }
 
 .backdrop__close {
@@ -36,6 +62,13 @@
   fill: #d41443;
   width: 40px;
   height: 40px;
+  position: absolute;
+  &:hover,
+  &:focus {
+    fill: var(--primary-bg);
+  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop__title {
