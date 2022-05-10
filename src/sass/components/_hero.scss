@@ -376,16 +376,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--second-bg);
-  color: var(--accent-txt);
+  background: var(--accent-btn-bg);
+  color: var(--light-txt);
   cursor: pointer;
   &:hover {
     color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: var(--hover-btn-bg);
   }
   &:focus {
     color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: var(--hover-btn-bg);
   }
   @media screen and(min-width:320px) {
     width: 61.2px;
@@ -429,12 +429,10 @@
   color: var(--accent-txt);
   cursor: pointer;
   &:hover {
-    color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: #ecebeb;
   }
   &:focus {
-    color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: #ecebeb;
   }
   @media screen and(min-width:320px) {
     width: 82.8px;
