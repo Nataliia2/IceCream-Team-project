@@ -20,10 +20,10 @@
     background-color: var(--light-btn-bg);
 }
 .scrollup__icon {
-    fill: var(--accent-btn-bg);
+    fill: var(--primary-bg);
     transition: fill var(--animation-function);
 }
 .scrollup__icon:hover,
 .scrollup__icon:focus {
-    fill:  var(--hover-fill-icon);
+    fill:  var(--hover-btn-bg);
 }
