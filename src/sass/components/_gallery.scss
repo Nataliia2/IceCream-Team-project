@@ -1,9 +1,11 @@
 .gallery__container{
     width: 100%;
-    display: flex;
-    align-items: center;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+.gallery__list{
+    display: flex;
+    align-items: center;
+}
     
