@@ -1,1 +1,61 @@
-<p class="about">section about</p>
+<section class="about" id="how-made">
+        <div class="container">
+            <p class="uppertitle">tradition and love</p>
+            <h2 class="title about__title">how it’s made?</h2>
+            <div class="about__wrapper">
+                <picture>
+                     <source 
+                        srcset="images/about/about-picture_lg.webp 1x,
+                                images/about/about-picture_lg@2x.webp 2x" 
+                        media="(min-width: 1200px)"
+                        type="image/webp" 
+                    />
+                    <source 
+                        srcset="images/about/about-picture_lg.png 1x,
+                                images/about/about-picture_lg@2x.png 2x" 
+                        media="(min-width: 1200px)" 
+                        type="image/png" 
+                    />
+                    <source 
+                        srcset="images/about/about-picture_md.webp 1x,
+                                images/about/about-picture_md@2x.webp 2x" 
+                        media="(min-width: 480px)"
+                        type="image/webp" 
+                    />
+                    <source 
+                        srcset="images/about/about-picture_md.png 1x,
+                                images/about/about-picture_md@2x.png 2x" 
+                        media="(min-width: 480px)" 
+                        type="image/png" 
+                    />
+                    <source 
+                        srcset="images/about/about-picture_sm.webp 1x,
+                                images/about/about-picture_sm@2x.webp 2x" 
+                        media="(min-width: 320px)"
+                        type="image/webp" 
+                    />
+                    <source 
+                        srcset="images/about/about-picture_sm@2x.png 2x" 
+                        media="(min-width: 320px)" 
+                        type="image/png"
+                    />
+                    <img class="about__img" src="images/about/about-picture_sm.png" alt="jug of milk and cow">
+                </picture>
+                
+                <div class="about__container">
+                    <p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
+                        eget, egestas eros.
+                        Maecenas eleifend erat at justo fringilla.</p>
+                    <p class="about__text about__text-color">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                        Mauris rhoncus orci in imperdiet placerat.
+                        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
+                    <p class="about__text about__text-color">Aliquam erat volutpat. Aenean accumsan.</p>
+                    <button class="about__btn" type="button" data-modal-open>Read more
+                        <svg class="about__icon" width="10" height="10">
+                            <use href="images/icons-ice-cream.svg#icon-vector-for-buttom-red"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+</section>
