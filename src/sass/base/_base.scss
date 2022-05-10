@@ -1,53 +1,57 @@
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-}
-
-h2:last-child,
-h1:last-child,
-h3:last-child,
-h4:last-child,
-p:last-child {
-  margin-bottom: 0;
-}
-
-/*Сброс подчеркиварий и маркеров*/
-button {
-  border: none;
-}
-ul {
-  padding: 0;
-  margin: 0;
-
-  list-style-type: none;
-}
-li {
-  padding: 0;
-  margin: 0;
-
-  list-style-type: none;
-}
-.link {
-  text-decoration: none;
-  position: relative;
-}
-
-.list {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
 body {
-  font-family: 'DM Sans', sans-serif;
-  color: #ffffff;
+  font-family: var(--primary-font);
+  color: var(--dark-txt);
 }
 
-img {
-  display: block;
-  max-width: 100%;
+.uppertitle { 
+  font-family: var(--secondary-font); 
+  color: var(--uppertitle-txt); 
+  text-align: center; 
+  text-transform: uppercase; 
+  
+  @include mq(mobile-only) { 
+    margin-bottom: 15px; 
+    font-size: 18px; 
+    line-height: 1.17; 
+  } 
+  
+  @include mq(tablet-only) { 
+    margin-bottom: 18px; 
+    font-size: 26px; 
+    line-height: 1.15; 
+  } 
+  
+  @include mq(desktop) { 
+    margin-bottom: 16px; 
+    font-size: 30px; 
+    line-height: 1.13; 
+  } 
+} 
+ 
+.title { 
+  font-weight: 400; 
+  font-family: var(--secondary-font); 
+    
+  text-align: center; 
+  letter-spacing: 0.04em; 
+  text-transform: uppercase; 
+  color: var(--accent-txt); 
+ 
+  @include mq(mobile-only) { 
+    margin-bottom: 148px; 
+    font-size: 34px; 
+    line-height: 1.15; 
+  } 
+  
+  @include mq(tablet-only) { 
+    margin-bottom: 154px; 
+    font-size: 48px; 
+    line-height: 1.15; 
+  } 
+  
+  @include mq(desktop) { 
+    margin-bottom: 258px; 
+    font-size: 58px; 
+    line-height: 1.2; 
+  } 
 }
