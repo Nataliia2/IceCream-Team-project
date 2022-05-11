@@ -146,35 +146,39 @@
 }
 
 .slider-wrapper {
-    max-width: 1260px;
+    max-width: 1280px;
     width: 100%;
     position: relative;
+
+    @include mq (tablet-only){
+        max-width: 768px;
+    }
 }
 
 #btn-prev,
 #btn-next {
     position: absolute;
-    border-radius: 50%;
-    left: 60px;
-    top: 43%;
-    height: 50px;
-    width: 50px;
-    background-color: #E17992;
-    opacity: 0.4;
+    left: 6px;
+    top: 60%;
+    transform: translate(0, -50%);
     cursor: pointer;
-    transition: opacity .2s ease-in-out;
-
+        @include mq (tablet) {
+                left: 40px;
+            }
+        @include mq (desktop) {
+            left: 25px;
+        }
 }
-
-#btn-prev:hover,
-#btn-next:hover {
-    opacity: 0.6;
-}
-
 
 #btn-next {
     left: auto;
-    right: 60px;
+    right: 6px;
+    @include mq (tablet){
+        right: 40px;
+    }
+    @include mq (desktop) {
+        left: 25px;
+    }
 }
 
 .slide {
@@ -226,3 +230,73 @@
     }
 }
 
+
+.arrow-left span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 3px solid #ff3140;
+    border-left: 3px solid #ff3140;
+    animation: arrow-left 2s infinite;
+    margin: -3px;
+    
+    float: left;
+}
+ 
+.arrow-left span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-left span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-left {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-0px, -0px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+}
+
+.arrow-right span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 3px solid #ff3140;
+    border-left: 3px solid #ff3140;
+    animation: arrow-right 2s infinite;
+    margin: -3px;
+
+    float: right;
+}
+
+.arrow-right span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow-right span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes arrow-right {
+    0% {
+        opacity: 0;
+        transform: rotate(225deg) translate(-0px, -0px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(225deg) translate(0px, 0px);
+    }
+}
