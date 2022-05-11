@@ -1,4 +1,4 @@
-.products-modal,
+.modal,
 .icecoffee,
 .milkshake {
 padding-bottom: 30px;
@@ -17,9 +17,8 @@ z-index: 150;
 visibility: hidden;
 }
 
-.products-modal.active {
+.modal.active {
     opacity: 1;
-    // pointer-events: none;
     visibility: visible;
 }
 
