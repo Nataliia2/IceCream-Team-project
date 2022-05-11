@@ -1,8 +1,8 @@
-.overlay {
+.contacts-overlay {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    
+
     position: fixed;
 
     background-color: rgba(0, 0, 0, 0.3);
@@ -74,4 +74,3 @@
         height: 700px;
     }
 }
-
