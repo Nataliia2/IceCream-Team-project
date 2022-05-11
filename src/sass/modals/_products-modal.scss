@@ -1,20 +1,26 @@
-.modal,
-.icecoffee,
-.milkshake {
+.modal {
 padding-bottom: 30px;
 padding-top: 30px;
 
 position: fixed;
-top: 0;
-left: 0;
+
 width: 100%;
 height: 100%;
 padding-top: 20px;
-background-color: var(--hero-bg);
+
 opacity: 0;
+
+visibility: hidden;
+}
+
+.icecream,
+.icecoffee,
+.milkshake {
+background-color: var(--hero-bg);
 overflow-y: scroll;
 z-index: 150;
-visibility: hidden;
+width: 100vw;
+height: 100vh;
 }
 
 .modal.active {

@@ -15,9 +15,12 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
+@import './components/button';
 
+
+@import './modals/contacts-modal';
+@import './modals/mobile-menu';
 @import './modals/backdrop';
 @import './modals/products-modal';
+
 @import './modals/scroll-up';
-@import './modals/mobile-menu';
-@import './modals/contacts-modal';

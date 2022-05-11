@@ -30,8 +30,11 @@
     }
 }
 
-.footer__text {
+.footer__text {    
+    text-align: start;
+
     @include mq(mobile-only) {
+
         width: 232px;
     }
 
@@ -44,7 +47,8 @@
     }
 }
 
-.footer__text--accent {
+.footer__text--accent {  
+    text-align: start;
     @include mq(mobile-only) {
         width: 200px;
     }
