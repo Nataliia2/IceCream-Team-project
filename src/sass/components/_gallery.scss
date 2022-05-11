@@ -48,7 +48,8 @@
 
 .gallery__list--colum { 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    align-items: flex-start;
 }
 
 .gallery__item--colum:not(:last-child) {
