@@ -93,17 +93,18 @@
   }
 }
 .hero__desc-left__sidebar {
-  @keyframes Appearance {
+  animation: animate_grow 2s infinite;
+  @keyframes animate_grow {
     0% {
-      opacity: 0;
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.25, 1.25, 1.25);
     }
     100% {
-      opacity: 1;
+      transform: scale3d(1, 1, 1);
     }
   }
-  animation-name: Appearance;
-  animation-duration: 2s;
-  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .hero__desc-right__sidebar {
   position: relative;
@@ -127,26 +128,47 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   border-radius: 50%;
   background-color: white;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
-    background-image: url(/images/hero/arrow-right-table.png);
     bottom: 31px;
     right: 99px;
     width: 18px;
     height: 18px;
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(/images/hero/arrow-right.png);
     bottom: 14px;
     right: 180px;
     width: 26px;
     height: 26px;
   }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-btn-bg);
+  }
 }
+.hero__arrow_icon {
+  fill: var(--accent-btn-bg);
+}
+.hero__arow:hover .hero__arrow_icon,
+.hero__arow:focus .hero__arrow_icon {
+  fill: var(--light-txt);
+}
+.hero__arrow_item {
+  display: block;
 
+  @media screen and (min-width: 768px) {
+    width: 7px;
+    height: 6px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 12px;
+    height: 8px;
+  }
+}
 .hero__txt {
   font-family: var(--primary-font);
 
@@ -176,7 +198,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   @media screen and (max-width: 767px) {
     left: 11.25%;
@@ -210,7 +232,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 
   @media screen and (max-width: 767px) {
@@ -237,7 +259,7 @@
     }
   }
   animation-name: Appearance;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
   @media screen and(max-width:767px) {
     display: none;
@@ -354,16 +376,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--second-bg);
-  color: var(--accent-txt);
+  background: var(--accent-btn-bg);
+  color: var(--light-txt);
   cursor: pointer;
   &:hover {
     color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: var(--hover-btn-bg);
   }
   &:focus {
     color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: var(--hover-btn-bg);
   }
   @media screen and(min-width:320px) {
     width: 61.2px;
@@ -407,12 +429,10 @@
   color: var(--accent-txt);
   cursor: pointer;
   &:hover {
-    color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: #ecebeb;
   }
   &:focus {
-    color: var(--light-txt);
-    background: var(--accent-btn-bg);
+    background: #ecebeb;
   }
   @media screen and(min-width:320px) {
     width: 82.8px;
