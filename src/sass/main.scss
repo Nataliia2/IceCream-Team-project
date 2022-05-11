@@ -7,7 +7,6 @@
 @import './base/container';
 
 @import './components/header';
-@import './components/mobile-menu';
 @import './components/hero';
 @import './components/products';
 @import './components/about';
@@ -21,5 +20,7 @@
 
 
 @import './modals/backdrop';
-@import './modals/modal-menu';
+@import './modals/products-modal';
 @import './modals/scroll-up';
+@import './modals/mobile-menu';
+@import './modals/contacts-modal';
