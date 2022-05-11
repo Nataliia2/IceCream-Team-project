@@ -124,6 +124,7 @@
     letter-spacing: 0.01em;
 
     color: var(--accent-txt);
+    
 
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -146,7 +147,7 @@
 
 .form-input:focus+.form-label,
 .form-input:not(:placeholder-shown)+.form-label {
-    transform: translateY(-40px) translateX(-40px);
+    transform: translateY(-35px) translateX(-35px);
 }
 
 .form-icon {
