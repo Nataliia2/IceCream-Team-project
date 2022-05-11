@@ -11,7 +11,7 @@
         refs.backdrop.addEventListener("click", logBackdropClick);
 
         function toggleModal() {
-            document.body.classList.toggle("modal-open");
+            document.body.classList.toggle("form-open");
             refs.backdrop.classList.toggle("is-hidden");
         }
 
