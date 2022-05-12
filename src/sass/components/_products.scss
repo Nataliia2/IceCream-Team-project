@@ -1,22 +1,3 @@
-
-.products {
-
-    @include mq(mobile-only) {
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-
-    @include mq(tablet-only) {
-    padding-top: 40px;
-    padding-bottom: 60px; 
-    }
-
-    @include mq(desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    }
-}
-
 .products__title {
    
 @include mq(mobile-only) {

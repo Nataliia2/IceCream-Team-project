@@ -42,16 +42,16 @@
 .hero__info-box {
   position: relative;
   @media screen and (max-width: 767px) {
-    left: 20px;
     top: 194px;
+    left: 0px;
   }
   @media screen and (min-width: 768px) {
-    left: 16px;
     top: 102px;
+    left: 0px;
   }
   @media screen and (min-width: 1280px) {
-    left: 16px;
     top: 147px;
+    left: 0px;
   }
 }
 .hero__title-crimson {
@@ -63,16 +63,16 @@
 
   color: var(--accent-txt);
   @media screen and (max-width: 767px) {
-    font-size: 34px;
-    line-height: calc(39 / 34);
+    font-size: 48px;
+    line-height: calc(48 / 46);
   }
   @media screen and (min-width: 768px) {
-    font-size: 33px;
-    line-height: calc(36 / 33);
+    font-size: 34px;
+    line-height: calc(34 / 31);
   }
   @media screen and (min-width: 1280px) {
     font-size: 58px;
-    line-height: calc(66 / 58);
+    line-height: calc(58 / 52);
   }
 }
 .hero__desc {
@@ -269,7 +269,7 @@
     top: 265px;
   }
   @media screen and(min-width:1280px) {
-    left: 930px;
+    left: 958px;
     top: 421px;
   }
 }
@@ -280,11 +280,11 @@
     display: none;
   }
   @media screen and(min-width:768px) {
-    left: 693px;
+    left: 701px;
     top: 94px;
   }
   @media screen and(min-width:1280px) {
-    left: 1152px;
+    left: 1169px;
     top: 153px;
   }
 }

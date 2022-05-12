@@ -48,8 +48,8 @@
     line-height: 1.31;
     letter-spacing: 0.02em;
     text-decoration: none;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    transition: color var(--animation-hover);
 
     &:hover,
     &:focus {
@@ -74,13 +74,15 @@
 
     align-items: center;
     text-align: center;
+    cursor: pointer;
 
     color: var(--accent-txt);
     background-color: var(--primary-bg);
     border-radius: 22px;
 
     border: 1px solid transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    transition: background-color var(--animation-hover);
 
 &::after {
         content: "";
@@ -108,7 +110,18 @@
 .menu-btn {
     background-color: transparent;
     border: 1px solid transparent;
+
+    &__icon-open {
+        width: 20px;
+        height: 12px;      
+    }
    
+    &:hover,
+    &:focus {
+        background-color: var(--light-btn-bg);
+      
+    }
+       
     @include mq(desktop) {
             display: none;
         }
