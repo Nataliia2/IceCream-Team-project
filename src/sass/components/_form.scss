@@ -205,9 +205,13 @@
 
     color: var(--light-txt);
 
-    // @media screen and (min-width: 1200px) {
-    //     font-size: 14px;
-    // }
+    // @include mq(desktop) {
+    //         font-size: 14px;
+    //     }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .checkbox-icon {
