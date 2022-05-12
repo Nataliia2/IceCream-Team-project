@@ -203,6 +203,12 @@
             font-size: 16px;
             line-height: 1.87;
         }
+                &:hover,
+                &:focus {
+                    color: var(--uppertitle-txt);
+        
+                }
+
 }
 
 .contacts-button--box {
