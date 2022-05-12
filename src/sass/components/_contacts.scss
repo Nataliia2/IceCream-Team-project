@@ -8,7 +8,6 @@
             background-image: linear-gradient(180deg, #fff 18%, #fff5f6 0 100%);
             
         }
-    
 }
 
 .contacts-list {
@@ -28,19 +27,19 @@
 
     @include mq(mobile-only){
         width: 280px;
-        &:not(:last-child) {
-            margin-bottom: 20px;
+    &:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
-    @include mq(tablet) {
-        &:not(:last-child) {
-            margin-right: 32px;
-    }
-}
+            @include mq(tablet) {
+            &:not(:last-child) {
+                    margin-right: 32px;
+                }
+        }
 
-    @include mq(desktop) {
-        width: 393px;
-}
+            @include mq(desktop) {
+            width: 393px;
+        }
 }
 
 .contacts-blok:not(:last-child) {
