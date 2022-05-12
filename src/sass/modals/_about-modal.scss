@@ -108,6 +108,7 @@
 
     &:hover,
     &:focus {
+        color: var(--accent-btn-bg);
         background-color: rgba(240, 111, 143, 0.5);
     }
 }
@@ -140,6 +141,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: calc(21/14);
+    text-align: center;
 @include mq (tablet) {
     font-size: 20px;
 }
@@ -162,6 +164,7 @@
 
     &:hover,
     &:focus {
+        color: var(--accent-btn-bg);
         background-color: rgba(240, 111, 143, 0.5);
     }
     
