@@ -120,7 +120,7 @@
     }
 
     &:focus-within>.form-label {
-        color: white;
+        color: var(--light-txt);
     }
 
 }
@@ -137,11 +137,7 @@ color: var(--accent-txt);
     
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          
-    &:active {
-        color: aliceblue;      
-    }
-
+   
     @include mq(desktop) {
         font-size: 14px;
     }
