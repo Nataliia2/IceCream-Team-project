@@ -110,15 +110,18 @@
 .menu-btn {
     background-color: transparent;
     border: 1px solid transparent;
+
+    &__icon-open {
+        width: 20px;
+        height: 12px;      
+    }
    
     &:hover,
     &:focus {
-        background-color: var(--hover-btn-bg);
+        background-color: var(--light-btn-bg);
+      
     }
-    // &:hover .menu-btn__icon {
-    //     fill: var(--light-btn-bg);
-    // }
-   
+       
     @include mq(desktop) {
             display: none;
         }

@@ -68,6 +68,7 @@
     margin-right: 8px;
     margin-left: auto;
     border-radius: 50%;
+    cursor: pointer;
     background-color: var(--accent-btn-bg);
    
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -130,10 +131,12 @@
 
     color: var(--accent-txt);
     
-
     transform: translateY(-50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
+    @include mq(desktop) {
+        font-size: 14px;
+    }
 }
 
 .form-input {
@@ -220,6 +223,7 @@
     width: 16px;
     height: 15px;
     margin-right: 7px;
+    cursor: pointer;
 
     border: 2px solid var(--accent-btn-bg);
     border-radius: 2px;
@@ -239,6 +243,7 @@
     margin-left: 5px;
     font-weight: 700;
     color: var(--accent-txt);
+    cursor: pointer;
 
     &:hover {
         color: var(--uppertitle-txt);
@@ -253,6 +258,7 @@
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 
     font-weight: 700;
     font-size: 16px;
