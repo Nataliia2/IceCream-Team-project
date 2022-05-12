@@ -10,21 +10,21 @@
     <form class="form">
         <h2 class="form-title">Leave your detalis, we will call you back</h2>
         <div class="form-field">
-            <input class="form-input" type="text" name="name" id="name" placeholder=" ">
+            <input class="form-input" type="text" name="name" id="name" placeholder=" " required minlength="6" title="ку-ку!!нужно заполнить поле">
             <label for="name" class="form-label">Name</label>
             <svg class="form-icon" width="12" height="12">
                 <use href="/images/icons-ice-cream.svg#icon-profile"></use>
             </svg>
         </div>
         <div class="form-field">
-            <input class="form-input" type="tel" name="phone-number" id="phone-number" placeholder=" ">
+            <input class="form-input" type="tel" name="phone-number" id="phone-number" placeholder=" " required title="Номер телефончика">
             <label for="phone-number" class="form-label">Phone</label>
             <svg class="form-icon" width="13" height="13">
                 <use href="/images/icons-ice-cream.svg#icon-phone"></use>
             </svg>
         </div>
         <div class="form-field">
-            <input class="form-input" type="text" name="email" id="email" placeholder=" ">
+            <input class="form-input" type="text" name="email" id="email" placeholder=" " required title="Электронный адрес">
             <label for="email" class="form-label">Email</label>
             <svg class="form-icon" width="15" height="12">
                 <use href="/images/icons-ice-cream.svg#icon-pochta"></use>
@@ -35,7 +35,7 @@
             <textarea class="feedback" name="feedback" rows="5" placeholder="Enter messange"></textarea>
         </label>
         <label class="checkbox-label">
-            <input class="checkbox" type="checkbox" name="checkbox">
+            <input class="checkbox" type="checkbox" name="checkbox" required>
             <span class="checkbox-icon"></span>
             I agree with the terms and accept
             <a class="modal-link" href="/" target="_blank">Delivery conditions</a>
