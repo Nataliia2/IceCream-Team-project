@@ -43,12 +43,15 @@
   position: relative;
   @media screen and (max-width: 767px) {
     top: 194px;
+    left: 0px;
   }
   @media screen and (min-width: 768px) {
     top: 102px;
+    left: 0px;
   }
   @media screen and (min-width: 1280px) {
     top: 147px;
+    left: 0px;
   }
 }
 .hero__title-crimson {
