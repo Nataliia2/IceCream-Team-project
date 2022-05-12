@@ -1,12 +1,5 @@
 .gallery{
     background-image: linear-gradient(#fff5f6 45%, #ffffff 0 100%);
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    @include mq(desktop) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
 }
 
 .gallery__list{
