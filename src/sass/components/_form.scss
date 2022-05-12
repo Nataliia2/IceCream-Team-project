@@ -28,7 +28,12 @@
     max-width: 450px;
 
     background-color: #E17992;
-
+    background-position: bottom 25% right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/about/about-background_sm.png');
+    background-image: -webkit-image-set(url('../images/about/about-background_sm.webp') 1x);
+    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -205,13 +210,9 @@
 
     color: var(--light-txt);
 
-    // @include mq(desktop) {
-    //         font-size: 14px;
-    //     }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-    }
+    @include mq(desktop) {
+            font-size: 14px;
+        }
 }
 
 .checkbox-icon {
