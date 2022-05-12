@@ -4,5 +4,5 @@ import './js/contacts-modal';
 import './js/about-modal';
 import './js/mobile-menu';
 import './js/modal-form';
-import './js/open-close';
 import './js/scroll-up';
+import './js/open-close';
