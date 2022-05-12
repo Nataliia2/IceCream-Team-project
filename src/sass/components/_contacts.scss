@@ -3,16 +3,11 @@
     display: flex;
     justify-content: center;
     background-image: linear-gradient(180deg, #fff 23%, #fff5f6 0 100%);
-    padding-bottom: 48px;
     
         @include mq(tablet) {
             background-image: linear-gradient(180deg, #fff 18%, #fff5f6 0 100%);
-            padding-bottom: 40px;
+            
         }
-    
-        @include mq(desktop) {
-            padding-bottom: 120px;
-}
 }
 
 .contacts-list {
@@ -23,7 +18,7 @@
 }
 
 .contacts-item {
-    max-width: 280px;
+    width: 100%;
     padding: 40px 32px;
     background-color: var(--primary-bg);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -31,6 +26,7 @@
     
 
     @include mq(mobile-only){
+        width: 280px;
     &:not(:last-child) {
         margin-bottom: 20px;
     }
