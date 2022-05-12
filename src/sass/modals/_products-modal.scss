@@ -1,4 +1,4 @@
-.modal {
+.contacts-modal {
 padding-bottom: 30px;
 padding-top: 30px;
 
@@ -17,13 +17,13 @@ visibility: hidden;
 .icecoffee,
 .milkshake {
 background-color: var(--hero-bg);
-overflow-y: scroll;
+
 z-index: 150;
 width: 100vw;
 height: 100vh;
 }
 
-.modal.active {
+.contacts-modal.active {
     opacity: 1;
     visibility: visible;
 }
