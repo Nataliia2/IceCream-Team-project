@@ -1,14 +1,5 @@
 .customer-reviews {
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 48px;
-
-    @include mq (tablet){
-        padding-bottom: 80px;
-    }
-    @include mq (desktop) {
-        padding-bottom: 120px;
-    }
 }
 
 .customer-reviews__img {
