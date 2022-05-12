@@ -4,11 +4,12 @@
     left: 0;
     height: 100%;
     max-width: 254px;
-    opacity: 0;
-    visibility: hidden;
+  
     background-color: #E17992;
     padding: 60px 21px;
     z-index: 100;
+    transform: translateX(-100%) scale(.5);
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
 
 
     @include mq(desktop) {
@@ -17,9 +18,9 @@
 }
 
 .menu-mobile.is-open {
-    opacity: 1;
-    visibility: visible;
-
+  
+    transform: translate(0) scale(1);
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
 }
 
 
@@ -105,8 +106,7 @@
 
 
 .mobile-menu__item {
-    padding-top: 10px;
-    padding-bottom: 13px;
+   
     border-top: 1px solid #E18298;
     border-bottom: 1px solid #E18298;
 
@@ -114,12 +114,14 @@
 }
 
 .mobile-menu__link {
-
+    display: block;
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
+    padding-top: 10px;
+    padding-bottom: 13px;
     align-items: center;
     color: var(--light-txt);
     transition: color 250ms cubic-bezier(.4, 0, .2, 1);
