@@ -1,14 +1,5 @@
 .footer {
-    padding-top: 48px;
     background-color: var(--second-bg);
-
-    @include mq(tablet) {
-        padding-top: 40px;
-    }
-
-    @include mq(desktop) {
-        padding-top: 120px;
-    }
 }
 
 .footer__groupe {
@@ -30,8 +21,11 @@
     }
 }
 
-.footer__text {
+.footer__text {    
+    text-align: start;
+
     @include mq(mobile-only) {
+
         width: 232px;
     }
 
@@ -44,7 +38,8 @@
     }
 }
 
-.footer__text--accent {
+.footer__text--accent {  
+    text-align: start;
     @include mq(mobile-only) {
         width: 200px;
     }

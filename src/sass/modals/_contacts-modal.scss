@@ -1,4 +1,4 @@
-.contacts-overlay {
+.overlay {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -18,7 +18,7 @@
     z-index: 5;
 }
 
-.modal.active,
+.contacts-modal.active,
 .overlay.active {
     opacity: 1;
     visibility: visible;
@@ -49,8 +49,8 @@
     }
 }
 
-.modal {
-    position: absolute;
+.contacts-modal {
+    position: fixed;
 
     opacity: 0;
     visibility: hidden;

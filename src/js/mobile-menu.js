@@ -10,4 +10,8 @@
   mobileBtnClose.addEventListener('click', () => {
     mobileMenuRef.classList.toggle('is-open');
   });
+
+   mobileMenuRef.addEventListener('click', () => {
+    mobileMenuRef.classList.remove('is-open');
+  })
 })();
