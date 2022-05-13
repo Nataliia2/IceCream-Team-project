@@ -4,11 +4,12 @@
 .icecream,
 .icecoffee,
 .milkshake {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--hero-bg);
-
     z-index: 150;
     width: 100vw;
-    height: 100vh;
+    height: 100vh;   
 }
 
 .contacts-modal.active {
@@ -94,16 +95,12 @@ fill: var(--light-txt);
     margin-bottom: 32px;
     font-size: 14px;
     line-height: 1.5;
-        
-    @include mq(tablet) {
-        line-height: 1.79;
-    }
-            
+
     @include mq(desktop) {
         margin-bottom: 60px;
-        font-size: 22px;
-        line-height: 1.75;
+        font-size: 16px;
     }
+            
 }
 
 .products-modal__btn-buy {
