@@ -8,7 +8,9 @@
     // z-index: 150;
     // width: 100vw;
     // height: 100vh;
-
+    @include mq(mobile-only) {
+        overflow: scroll;
+    }
 }
 
 // .contacts-modal.active {
