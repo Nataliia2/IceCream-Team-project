@@ -1,19 +1,19 @@
 // к класу contacts-modal добавить класс и сделать индивидуальные свойства
 
 .contacts-modal {
-  visibility: hidden;
-  position: fixed;
-  opacity: 0;
+  // visibility: hidden;
+  // position: fixed;
+  // opacity: 0;
 
-  z-index: 100;
-  width: 100%;
-  height: 100%;
+  // z-index: 100;
+  // width: 100%;
+  // height: 100%;
 
-  &.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
+  // &.active {
+  //   opacity: 1;
+  //   visibility: visible;
+  //   pointer-events: auto;
+  // }
   @keyframes Appearance {
     0% {
       opacity: 0;
