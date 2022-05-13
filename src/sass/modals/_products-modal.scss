@@ -143,16 +143,19 @@ fill: var(--light-txt);
       max-width: 224px;
     }
 
+     @include mq(desktop) {
+      max-width: 350px;
+    }
 }
 
 .products-modal__item:not(:last-child) {
 
     @include mq(tablet-only) {
-        margin-right: 15px;
+        margin-right: 20px;
     }
 
     @include mq(desktop) {
-        margin-right: 30px;
+        margin-right: 50px;
     }
 }
 
