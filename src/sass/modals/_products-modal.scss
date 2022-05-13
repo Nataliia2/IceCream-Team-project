@@ -1,21 +1,20 @@
-// к класу contacts-modal добавить класс и сделать индивидуальные свойства
-
-
 .icecream,
 .icecoffee,
 .milkshake {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--hero-bg);
-    z-index: 150;
-    width: 100vw;
-    height: 100vh;   
+
+    // z-index: 150;
+    // width: 100vw;
+    // height: 100vh;
+
 }
 
-.contacts-modal.active {
-    opacity: 1;
-    visibility: visible;
-}
+// .contacts-modal.active {
+//     opacity: 1;
+//     visibility: visible;
+// }
 
 .products-modal__btn {
     position: absolute;
@@ -139,7 +138,7 @@ fill: var(--light-txt);
 }
 
 .products-modal__item {
-    @include mq(tablet-only) {
+    @include mq(tablet) {
       max-width: 224px;
     }
 
@@ -150,7 +149,7 @@ fill: var(--light-txt);
 
 .products-modal__item:not(:last-child) {
 
-    @include mq(tablet-only) {
+    @include mq(tablet) {
         margin-right: 20px;
     }
 
