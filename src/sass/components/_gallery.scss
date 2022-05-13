@@ -1,22 +1,19 @@
 .gallery{
     background-image: linear-gradient(#fff5f6 45%, #ffffff 0 100%);
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    @include mq(desktop) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
 }
 
 .gallery__list{
     display: flex;
     align-items: center;    
     justify-content: center;
+    
+    @include mq(mobile-only) {
+        flex-direction: column;
+    }
 }
 
 .gallery__item:not(:last-child) {
-    margin-right: 4px;
+    margin-bottom: 8px;
     transition: transform var(--animation-hover);
 
     @include mq(tablet) {
@@ -29,16 +26,13 @@
 } 
 
 .gallery__thumb {
-    border-radius: 10px;
+    display: block;
+    border-radius: 18px;
     overflow: hidden;
-    cursor: pointer;
-
-    @include mq(tablet) {
-        border-radius: 14px;
-    }
-
-    @include mq(desktop) {
-        border-radius: 18px;
+    cursor: zoom-in;
+    
+    @include mq(mobile-only) {
+        max-width: 137px;
     }
 
     &:hover {
@@ -48,11 +42,16 @@
 
 .gallery__list--colum { 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    align-items: flex-start;
+    
+    @include mq(mobile-only) {       
+        align-items: center;
+    }
 }
 
 .gallery__item--colum:not(:last-child) {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     
     @include mq(tablet) {
         margin-bottom: 6px;
@@ -64,17 +63,34 @@
 }
 
 .gallery__item:nth-child(2) {
-    margin-top: -16px;
+    @include mq(tablet) {
+        margin-top: 4.5%;
+    }
 }
     
-.gallery__item:nth-child(4) {
-    margin-top: 60px;
+.gallery__item:nth-child(4) { 
+    @include mq(tablet) {
+        margin-top: 3%;
+    }
 }
     
 .gallery__item:nth-child(5) {
-    margin-top: -30px;
+    @include mq(tablet) {
+        margin-top: -3%;
+    }
 }  
 
-.gallery__item:nth-child(6) {
-    margin-top: 10px;
+.gallery__item:nth-child(6) {          
+    @include mq(tablet) {
+        margin-top: -1%;
+    }
+}
+
+.gallery__img{
+    
+    @include mq(mobile-only) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;	
+    }
 }

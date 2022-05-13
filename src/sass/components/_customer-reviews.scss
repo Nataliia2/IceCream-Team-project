@@ -1,13 +1,5 @@
 .customer-reviews {
     text-align: center;
-    padding-top: 40px;
-
-    @include mq (tablet){
-        padding-bottom: 32px;
-    }
-    @include mq (desktop) {
-        padding-bottom: 72px;
-    }
 }
 
 .customer-reviews__img {
@@ -164,7 +156,7 @@
 #btn-prev,
 #btn-next {
     position: absolute;
-    left: 6px;
+    left: 15px;
     top: 55%;
     cursor: pointer;
         @include mq (tablet) {
@@ -177,7 +169,7 @@
 
 #btn-next {
     left: auto;
-    right: 6px;
+    right: 15px;
     @include mq (tablet){
         right: 40px;
     }

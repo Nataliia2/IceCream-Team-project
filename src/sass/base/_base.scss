@@ -1,6 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--primary-font);
   color: var(--dark-txt);
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+  @include mq(desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .uppertitle { 

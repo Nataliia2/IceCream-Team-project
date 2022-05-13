@@ -1,0 +1,194 @@
+.about-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    // background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 20;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
+.about-backdrop__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: var(--light-txt);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-image: linear-gradient(to top, rgba(255, 255, 255,
+                0.2), rgba(255, 165, 186, 0.2)), url('../images/about-modal/about-modal_sm.png');
+    background-image: linear-gradient(to top, rgba(255, 255, 255,
+                0.2), rgba(255, 165, 186, 0.2)), -webkit-image-set(url('../images/about-modal/about-modal_sm.webp') 1x);
+
+    @include mq (retina) {
+        background-image: linear-gradient(to top, rgba(255, 255, 255,
+                    0.2), rgba(255, 165, 186, 0.2)), url('../images/about-modal/about-modal_sm@2x.png');
+        background-image: linear-gradient(to top, rgba(255, 255, 255,
+                    0.2), rgba(255, 165, 186, 0.2)), -webkit-image-set(url('../images/about-modal/about-modal_sm@2x.webp') 2x);
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 400px;
+        height: 400px;
+    }
+
+    @include mq (tablet) {
+        background-image: linear-gradient(to top, rgba(255, 255, 255,
+                    0.2), rgba(255, 165, 186, 0.2)), url('../images/about-modal/about-modal_md.png');
+        background-image: linear-gradient(to top, rgba(255, 255, 255,
+                    0.2), rgba(255, 165, 186, 0.2)), -webkit-image-set(url('../images/about-modal/about-modal_md.webp') 1x);
+
+        @include mq (retina) {
+            background-image: linear-gradient(to top, rgba(255, 255, 255,
+                        0.2), rgba(255, 165, 186, 0.2)), url('../images/about-modal/about-modal_md@2x.png');
+            background-image: linear-gradient(to top, rgba(255, 255, 255,
+                        0.2), rgba(255, 165, 186, 0.2)), -webkit-image-set(url('../images/about-modal/about-modal_md@2x.webp') 2x);
+        }
+    }
+
+    @include mq (desktop) {
+        background-image: linear-gradient(to top, rgba(255, 255, 255,
+                    0.2), rgba(255, 165, 186, 0.2)), url('../images/about-modal/about-modal_lg.png');
+        background-image: linear-gradient(to top, rgba(255, 255, 255,
+                    0.2), rgba(255, 165, 186, 0.2)), -webkit-image-set(url('../images/about-modal/about-modal_lg.webp') 1x);
+
+        @include mq (retina) {
+            background-image: linear-gradient(to top, rgba(255, 255, 255,
+                        0.2), rgba(255, 165, 186, 0.2)), url('../images/about-modal/about-modal_lg@2x.png');
+            background-image: linear-gradient(to top, rgba(255, 255, 255,
+                        0.2), rgba(255, 165, 186, 0.2)), -webkit-image-set(url('../images/about-modal/about-modal_lg@2x.webp') 2x);
+        }
+    }
+
+
+    // animation-name: Appearance;
+    // animation-duration: 1000ms;
+    // animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    // @keyframes Appearance {
+    //         0% {
+    //             opacity: 0;
+    //         }
+
+    //         100% {
+    //             opacity: 1;
+    //         }
+    // }
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .about-backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    // @media screen and (min-width: 480px) {
+    //     width: 400px;
+    //     height: 400px;
+    // }
+
+    @media screen and (min-width: 1200px) {
+        width: 500px;
+        height: 250px;
+
+    }
+}
+
+.about-backdrop__button {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        // color: var(--accent-txt);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media screen and (min-width: 480px) {
+        top: 8px;
+        right: 8px;
+    }
+}
+
+.about-backdrop__icon {
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-backdrop__title {
+    font-family: var(--secondary-font);
+    color: var(--accent-txt);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+
+    @include mq(tablet) {
+        font-size: 45px;
+    }
+
+    @include mq(desktop) {
+        font-size: 45px;
+    }
+
+}
+
+.about-backdrop__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(21/14);
+
+    // text-align: center;
+    // letter-spacing: 0.04em;
+
+    // color: var(--light-txt);
+}
+
+.about-backdrop__link {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+
+    text-decoration: none;
+    padding: 10px 25px;
+    color: var(--dark-txt);
+    background-color: transparent;
+    border-radius: 22px;
+    border: 1px solid rgba(240, 111, 143, 0.5);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: rgba(240, 111, 143, 0.5);
+    }
+}
