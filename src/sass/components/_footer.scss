@@ -1,11 +1,14 @@
 .footer {
     background-color: var(--second-bg);
+    
+    @include mq(desktop) {
+        padding-top: 60px;
+    }
 }
 
 .footer__groupe {
     @include mq(tablet) {
         display: flex;
-
         justify-content: space-between;
     }
     
@@ -25,7 +28,6 @@
     text-align: start;
 
     @include mq(mobile-only) {
-
         width: 232px;
     }
 
@@ -40,6 +42,7 @@
 
 .footer__text--accent {  
     text-align: start;
+    
     @include mq(mobile-only) {
         width: 200px;
     }
@@ -164,12 +167,12 @@
     margin-left: auto;
 
     padding-top: 16px;
-        padding-bottom: 20px;
+    padding-bottom: 20px;
     
-        @include mq(tablet) {
-            padding-bottom: 8px;
-            padding-top: 8px;
-        }
+    @include mq(tablet) {
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
     
     @include mq(tablet) {
         width: 306px;
