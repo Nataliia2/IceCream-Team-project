@@ -1,21 +1,7 @@
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector("[data-modal-open]"),
-//     closeModalBtn: document.querySelector("[data-modal-close]"),
-//     modal: document.querySelector("[data-modal]"),
-//   };
-
-//   refs.openModalBtn.addEventListener("click", toggleModal);
-//   refs.closeModalBtn.addEventListener("click", toggleModal);
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle("is-hidden");
-//   }
-// })();
 
 (() => {
   const refs = {
-            openModalBtn: document.querySelector("[data-backdrop-form]"),
+            openModalBtn: document.querySelector("[data-open-form]"),
             closeModalBtn: document.querySelector("[data-close-form]"),
             backdrop: document.querySelector("[data-backdrop-form]"),
         };
