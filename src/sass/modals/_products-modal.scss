@@ -1,14 +1,14 @@
-// к класу contacts-modal добавить класс и сделать индивидуальные свойства
-
-
 .icecream,
 .icecoffee,
 .milkshake {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--hero-bg);
 
     // z-index: 150;
     // width: 100vw;
     // height: 100vh;
+
 }
 
 // .contacts-modal.active {
@@ -94,16 +94,12 @@ fill: var(--light-txt);
     margin-bottom: 32px;
     font-size: 14px;
     line-height: 1.5;
-        
-    @include mq(tablet) {
-        line-height: 1.79;
-    }
-            
+
     @include mq(desktop) {
         margin-bottom: 60px;
-        font-size: 22px;
-        line-height: 1.75;
+        font-size: 16px;
     }
+            
 }
 
 .products-modal__btn-buy {
@@ -142,20 +138,23 @@ fill: var(--light-txt);
 }
 
 .products-modal__item {
-    @include mq(tablet-only) {
+    @include mq(tablet) {
       max-width: 224px;
     }
 
+     @include mq(desktop) {
+      max-width: 350px;
+    }
 }
 
 .products-modal__item:not(:last-child) {
 
-    @include mq(tablet-only) {
-        margin-right: 15px;
+    @include mq(tablet) {
+        margin-right: 20px;
     }
 
     @include mq(desktop) {
-        margin-right: 30px;
+        margin-right: 50px;
     }
 }
 
