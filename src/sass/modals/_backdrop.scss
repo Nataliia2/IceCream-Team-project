@@ -1,14 +1,14 @@
 // к класу contacts-modal добавить класс и сделать индивидуальные свойства
 
-  .contacts-modal {
+.contacts-modal {
   visibility: hidden;
   position: fixed;
   opacity: 0;
- 
+
   z-index: 100;
   width: 100%;
   height: 100%;
- 
+
   &.active {
     opacity: 1;
     visibility: visible;
@@ -28,7 +28,7 @@
 }
 
 .backdrop {
-background: url(/images/backdrop_hero/Background_backdrop.png),
+  background: url(/images/backdrop_hero/Background_backdrop.png),
     linear-gradient(rgb(255, 255, 255, 0.8), #ffa5ba, rgb(255, 255, 255, 0.8));
   background-size: contain;
   background-repeat: no-repeat;
@@ -134,10 +134,10 @@ background: url(/images/backdrop_hero/Background_backdrop.png),
     top: 527px;
   }
   @include mq(tablet) {
-    width: 258px;
+    width: 210px;
     height: auto;
-    right: 130px;
-    top: 420px;
+    right: 110px;
+    bottom: 25px;
   }
   @include mq(desktop) {
     width: 358px;
