@@ -18,11 +18,13 @@
 
 const refs = {
   openModalBtn: document.querySelector("[data-open-form]"),
+  openModalBtn2: document.querySelector("[data-open-form2]"),
   closeModalBtn: document.querySelector("[data-close-form]"),
   backdrop: document.querySelector("[data-backdrop-form]"),
 };
 
-refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn2.addEventListener("click", toggleModal);
 refs.closeModalBtn.addEventListener("click", toggleModal);
 
 refs.backdrop.addEventListener("click", logBackdropClick);
