@@ -136,8 +136,8 @@
   @include mq(tablet) {
     width: 210px;
     height: auto;
-    right: 107px;
-    top: 289px;
+    right: 110px;
+    bottom: 25px;
   }
   @include mq(desktop) {
     width: 358px;
